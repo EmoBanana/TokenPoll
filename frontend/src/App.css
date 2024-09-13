@@ -1,0 +1,139 @@
+@font-face {
+  font-family: "Lazydog";
+  src: url("./Lazydog.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  font-family: "Lazydog";
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #87a0e4;
+  color: white;
+  padding: 0 2rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  font-family: "Lazydog";
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 1rem;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .main-content {
+    flex-direction: row;
+  }
+}
+
+.poll-section {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .poll-section {
+    width: 48%;
+  }
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Poll Borders */
+.poll {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+/* Input Styles */
+input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.createPoll,
+.activePoll {
+  color: rgb(121, 121, 238);
+  font-size: 2rem;
+}
+
+/* Button Styles */
+button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+button.poll-button {
+  background-color: #3b82f6;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button.poll-button:hover {
+  background-color: #2563eb;
+}
+
+button.add-option-button {
+  background-color: #6b7280;
+  color: white;
+}
+
+button.add-option-button:hover {
+  background-color: #4b5563;
+}
+
+button.create-poll-button {
+  background-color: #10b981;
+  color: white;
+}
+
+button.create-poll-button:hover {
+  background-color: #059669;
+}
+
+/* Text Color */
+.text-gray-600 {
+  color: #4b5563;
+}
