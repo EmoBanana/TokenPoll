@@ -5,7 +5,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; connect-src 'self' https://api.dscvr.one https://api1.stg.dscvr.one https://*.helius-rpc.com https://api.devnet.solana.com; img-src 'self' https://*.dial.to/ https://proxy.dial.to https://res.cloudinary.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; frame-ancestors 'self' https://*.dscvr.one https://*.icp0.io"
+          "value": "default-src 'self'; connect-src 'self' https://api.dscvr.one https://api.devnet.solana.com; script-src 'self' 'wasm-unsafe-eval' https://cdnjs.cloudflare.com; style-src 'self' https://cdnjs.cloudflare.com; img-src 'self' https://token-poll.vercel.app; font-src 'self'; frame-ancestors 'self' https://*.dscvr.one https://*.icp0.io;"
         }
       ]
     }
